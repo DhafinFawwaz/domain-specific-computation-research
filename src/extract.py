@@ -4,6 +4,7 @@ import gzip
 import shutil
 
 def extract_files():
+    if not os.path.exists("extract"): os.makedirs("extract")
     for root, dirs, files in os.walk("download"):
         for file in files:
             if file.endswith(".gz"):
