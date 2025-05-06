@@ -15,3 +15,14 @@ pip install .
 python download.py
 python extract.py
 ```
+
+
+Install Conda from
+`https://www.anaconda.com/download/success`
+
+
+```bash
+conda env create \
+  --name qiime2-amplicon-2024.10 \
+  --file https://raw.githubusercontent.com/qiime2/distributions/refs/heads/dev/2024.10/amplicon/released/qiime2-amplicon-ubuntu-latest-conda.yml
+```

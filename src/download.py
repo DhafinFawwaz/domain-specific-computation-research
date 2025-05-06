@@ -16,7 +16,7 @@ def download_file(url, filename):
 def download_files():
     base_urls = "https://trace.ncbi.nlm.nih.gov/Traces/sra-reads-be/fastq?acc=SRR32507"
     if not os.path.exists("download"): os.makedirs("download")
-    for i in range(895, 949):
+    for i in range(915, 949):
         url = base_urls + str(i)
         filename = "download/SRR32507" + str(i) + ".fastq.gz"
         download_file(url, filename)
