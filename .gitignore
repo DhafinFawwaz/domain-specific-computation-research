@@ -1,11 +1,12 @@
 src/extract
 src/extract.zip
-src/download
 src/download.zip
 src/extractfastq
 src/output_folder
 src/dataset.csv
 src/MetaPhlAn
-src/vps/demux-seqs.qza
+src/vps/qiime2_output/demux-seqs.qza
+src/vps/qiime2_output/demux-seqs.qza
+!src/download/*
 
 Anaconda3-2024.10-1-Linux-x86_64.sh
