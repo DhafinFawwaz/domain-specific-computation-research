@@ -1,0 +1,11 @@
+download/*
+extract/*
+downloadfasta/*
+extractfasta/*
+./MetaPhlAn
+./SPAdes-4.1.0-Linux
+./output_folder
+download.cip
+extract.zip
+
+

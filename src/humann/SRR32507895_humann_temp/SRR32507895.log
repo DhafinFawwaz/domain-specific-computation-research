@@ -1,0 +1,6 @@
+04/22/2025 01:35:31 PM - humann.humann - INFO: Running humann v3.9
+04/22/2025 01:35:31 PM - humann.humann - INFO: Output files will be written to: /mnt/c/Users/sppAghetti/Downloads/biopython/src/humann
+04/22/2025 01:35:31 PM - humann.humann - INFO: Writing temp files to directory: /mnt/c/Users/sppAghetti/Downloads/biopython/src/humann/SRR32507895_humann_temp
+04/22/2025 01:35:31 PM - humann.utilities - INFO: File ( /mnt/c/Users/sppAghetti/Downloads/biopython/src/download/SRR32507895.fastq.gz ) is of format:  fastq.gz
+04/22/2025 01:35:31 PM - humann.utilities - INFO: Decompressing gzipped file ...
+04/22/2025 01:35:32 PM - humann.humann - INFO: Removing spaces from identifiers in input file
