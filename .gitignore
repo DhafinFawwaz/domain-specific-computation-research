@@ -10,3 +10,6 @@ src/vps/qiime2_output/demux-seqs.qza
 !src/download/*
 
 Anaconda3-2024.10-1-Linux-x86_64.sh
+src/filtered/demux-filtered.qza
+src/qiime2_output_no_outlier/demux-seqs.qza
+src/cutadapt/demux-bacteria.qza
