@@ -40,38 +40,38 @@ qiime emperor plot \
   --m-metadata-file denoised/sample-metadata.tsv \
   --o-visualization diversity/jaccard-emperor.qzv
 
-# # group by sample-name
-# qiime diversity beta-group-significance \
-#   --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
-#   --m-metadata-file diversity/sample-metadata-grouped.tsv \
-#   --m-metadata-column sample-name \
-#   --o-visualization diversity/bray_curtis-significance.qzv
-# qiime diversity adonis \
-#   --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
-#   --m-metadata-file diversity/sample-metadata-grouped.tsv \
-#   --p-formula "sample-name" \
-#   --o-visualization diversity/bray_curtis-adonis.qzv
+# group by sample-name
+qiime diversity beta-group-significance \
+  --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
+  --m-metadata-file diversity/sample-metadata-grouped.tsv \
+  --m-metadata-column sample-name \
+  --o-visualization diversity/bray_curtis-significance.qzv
+qiime diversity adonis \
+  --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
+  --m-metadata-file diversity/sample-metadata-grouped.tsv \
+  --p-formula "sample-name" \
+  --o-visualization diversity/bray_curtis-adonis.qzv
 
-# # group by biosample
-# qiime diversity beta-group-significance \
-#   --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
-#   --m-metadata-file diversity/sample-metadata-grouped.tsv \
-#   --m-metadata-column biosample \
-#   --o-visualization diversity/bray_curtis-significance.qzv
-# qiime diversity adonis \
-#   --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
-#   --m-metadata-file diversity/sample-metadata-grouped.tsv \
-#   --p-formula "biosample" \
-#   --o-visualization diversity/bray_curtis-adonis.qzv
+# group by biosample
+qiime diversity beta-group-significance \
+  --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
+  --m-metadata-file diversity/sample-metadata-grouped.tsv \
+  --m-metadata-column biosample \
+  --o-visualization diversity/bray_curtis-significance.qzv
+qiime diversity adonis \
+  --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
+  --m-metadata-file diversity/sample-metadata-grouped.tsv \
+  --p-formula "biosample" \
+  --o-visualization diversity/bray_curtis-adonis.qzv
 
-# # group by library-name
-# qiime diversity beta-group-significance \
-#   --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
-#   --m-metadata-file diversity/sample-metadata-grouped.tsv \
-#   --m-metadata-column library-name \
-#   --o-visualization diversity/bray_curtis-significance.qzv
-# qiime diversity adonis \
-#   --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
-#   --m-metadata-file diversity/sample-metadata-grouped.tsv \
-#   --p-formula "library-name" \
-#   --o-visualization diversity/bray_curtis-adonis.qzv
+# group by library-name
+qiime diversity beta-group-significance \
+  --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
+  --m-metadata-file diversity/sample-metadata-grouped.tsv \
+  --m-metadata-column library-name \
+  --o-visualization diversity/bray_curtis-significance.qzv
+qiime diversity adonis \
+  --i-distance-matrix diversity/core-metrics-results/bray_curtis_distance_matrix.qza \
+  --m-metadata-file diversity/sample-metadata-grouped.tsv \
+  --p-formula "library-name" \
+  --o-visualization diversity/bray_curtis-adonis.qzv

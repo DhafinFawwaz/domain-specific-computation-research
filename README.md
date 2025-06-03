@@ -76,4 +76,12 @@ phylogeny.sh: generate many things with phylogeny like tree, rooted tree, unroot
 diversity.sh: generate many things with diversity like alpha, beta, etc.
 python diversity.py: generate new sample-metadata file but with new columns for grouping
 diversity-visualize.sh: visualize all the diversity results to .qzv files.
+
+cross-validation.sh: masi nyari tau gimana dapetin kolom target
+python cross-validation.py: masi nyari tau gimana dapetin kolom target
+```
+
+## Process 2
+```bash
+conda create -n picrust2_env -c bioconda -c conda-forge picrust2
 ```
