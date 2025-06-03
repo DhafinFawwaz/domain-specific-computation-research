@@ -13,3 +13,16 @@ Anaconda3-2024.10-1-Linux-x86_64.sh
 src/filtered/demux-filtered.qza
 src/qiime2_output_no_outlier/demux-seqs.qza
 src/cutadapt/demux-bacteria.qza
+
+src/sratoolkit.3.2.1-ubuntu64
+src/backup
+src/dataset
+src/dataset-gzip
+
+src/silva-138-99-341F-909R-classifier.qza
+src/silva-138-99-341F-909R-extracted.qza
+src/silva-138-99-nb-classifier.qza
+src/silva-138-99-seqs.qza
+src/silva-138-99-tax.qza
+
+src/sratoolkit.3.2.1-ubuntu64.tar.gz
