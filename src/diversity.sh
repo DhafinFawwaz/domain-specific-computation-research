@@ -7,7 +7,7 @@ conda activate qiime2-amplicon-2024.10
 
 qiime feature-table rarefy \
   --i-table denoised/table.qza \
-  --p-sampling-depth 100 \
+  --p-sampling-depth 30000 \
   --o-rarefied-table diversity/core-metrics-results/rarefied_table.qza
 
 qiime diversity alpha \

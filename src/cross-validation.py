@@ -15,18 +15,18 @@ print(metadata.columns.tolist())
 print("\nFirst few rows of metadata:")
 print(metadata.head())
 
-# X = feature_table.T
-# y = metadata.loc[X.index, 'target_column']
+X = feature_table.T
+y = metadata.loc[X.index, 'source']
 
-# rf = RandomForestClassifier(n_estimators=100, random_state=42)
-# cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+rf = RandomForestClassifier(n_estimators=100, random_state=42)
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
-# cv_scores = cross_val_score(rf, X, y, cv=cv, scoring='accuracy')
-# precision_scores = cross_val_score(rf, X, y, cv=cv, scoring='precision_macro')
-# recall_scores = cross_val_score(rf, X, y, cv=cv, scoring='recall_macro')
-# f1_scores = cross_val_score(rf, X, y, cv=cv, scoring='f1_macro')
+cv_scores = cross_val_score(rf, X, y, cv=cv, scoring='accuracy')
+precision_scores = cross_val_score(rf, X, y, cv=cv, scoring='precision_macro')
+recall_scores = cross_val_score(rf, X, y, cv=cv, scoring='recall_macro')
+f1_scores = cross_val_score(rf, X, y, cv=cv, scoring='f1_macro')
 
-# print(f"Accuracy: {cv_scores.mean():.3f} ± {cv_scores.std():.3f}")
-# print(f"Precision: {precision_scores.mean():.3f} ± {precision_scores.std():.3f}")
-# print(f"Recall: {recall_scores.mean():.3f} ± {recall_scores.std():.3f}")
-# print(f"F1-score: {f1_scores.mean():.3f} ± {f1_scores.std():.3f}")
+print(f"Accuracy: {cv_scores.mean():.3f} ± {cv_scores.std():.3f}")
+print(f"Precision: {precision_scores.mean():.3f} ± {precision_scores.std():.3f}")
+print(f"Recall: {recall_scores.mean():.3f} ± {recall_scores.std():.3f}")
+print(f"F1-score: {f1_scores.mean():.3f} ± {f1_scores.std():.3f}")
