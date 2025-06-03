@@ -71,6 +71,7 @@ denoise.sh: denoise the data using DADA2.
 esearch -db sra -query "PRJNA1229183" | efetch -format runinfo > runinfo.csv
 python tometadata.py
 denoise-finishing.sh: visualize rep-seqs, denoising-stats, table to .qzv
+taxonomy-custom.sh: generate silva-138-99-341F-909R-extracted.qza (filtered dataset), silva-138-99-341F-909R-classifier.qza (classifier naive bayes), taxonomy.qza (resulting classification with sklearn)
 phylogeny.sh: generate many things with phylogeny like tree, rooted tree, unrooted tree, etc.
 diversity.sh: generate many things with diversity like alpha, beta, etc.
 python diversity.py: generate new sample-metadata file but with new columns for grouping
