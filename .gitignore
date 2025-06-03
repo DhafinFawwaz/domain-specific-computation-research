@@ -26,3 +26,8 @@ src/silva-138-99-seqs.qza
 src/silva-138-99-tax.qza
 
 src/sratoolkit.3.2.1-ubuntu64.tar.gz
+
+Anaconda3-2024.02-1-Linux-x86_64.sh
+
+src/taxonomy-custom/silva-138-99-341F-909R-250nt-classifier.qza
+src/taxonomy-custom/silva-138-99-341F-909R-250nt.qza
