@@ -10,11 +10,6 @@ import seaborn as sns
 feature_table = pd.read_csv('cross-validation/feature-table-for-ml.tsv', sep='\t', index_col=0, skiprows=1)
 metadata = pd.read_csv('denoised/sample-metadata.tsv', sep='\t', index_col=0)
 
-print("Available columns in metadata:")
-print(metadata.columns.tolist())
-print("\nFirst few rows of metadata:")
-print(metadata.head())
-
 X = feature_table.T
 y = metadata.loc[X.index, 'source']
 

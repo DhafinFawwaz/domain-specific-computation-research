@@ -31,3 +31,7 @@ Anaconda3-2024.02-1-Linux-x86_64.sh
 
 src/taxonomy-custom/silva-138-99-341F-909R-250nt-classifier.qza
 src/taxonomy-custom/silva-138-99-341F-909R-250nt.qza
+
+src/phylogeny/0d8687c7-46aa-4394-8d50-b5cb11352826
+src/picrust2_standalone_output/intermediate/*
+!src/picrust2_standalone_output/intermediate/.keep

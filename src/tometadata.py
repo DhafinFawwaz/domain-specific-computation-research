@@ -21,8 +21,6 @@ metadata = pd.DataFrame({
 
 metadata = metadata.sort_values('sample-id')
 
-metadata = metadata[metadata['sample-id'].isin(include_samples)]
-
 metadata.to_csv('denoised/sample-metadata.tsv', sep='\t', index=False)
 
 print("Created sample-metadata.tsv with", len(metadata), "samples")
